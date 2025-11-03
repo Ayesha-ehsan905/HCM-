@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --font-plus-jakarta-sans:"Plus_Jakarta_Sans", Arial, Helvetica, sans-serif;
+  --font-plus-jakarta-sans: "Plus_Jakarta_Sans", Arial, Helvetica, sans-serif;
   --background: #ffffff;
 }
 
@@ -97,6 +97,7 @@ body {
 }
 
 @keyframes shimmer {
+
   0%,
   90%,
   to {
@@ -129,6 +130,28 @@ body {
   }
 }
 
+@layer components {
+  .container {
+    @apply max-w-[1800px] mx-auto px-[30px];
+    /* fallback for older browsers — keep it safe */
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 
+  /* from 1200px and up (until 1799px) use 80px padding */
+  @media (min-width: 1200px) and (max-width: 1799px) {
+    .container {
+      padding-left: 80px;
+      padding-right: 80px;
+    }
+  }
 
-
+  /* at 1800px and above: container stays max-width:1800 and centered (mx-auto)
+     ensure padding remains 80px on very wide screens */
+  @media (min-width: 1800px) {
+    .container {
+      padding-left: 80px;
+      padding-right: 80px;
+    }
+  }
+}

@@ -1,18 +1,23 @@
-import React from "react";
-import { CallToActionSection } from "../sections/CallToActionSection";
-import { CoreOfferingsSection } from "../sections/CoreOfferingsSection";
-import { FooterSection } from "../sections/FooterSection";
-import { HeroSection } from "../sections/HeroSection";
-import {  Navbar } from "../sections/Navbar";
-import { NavigationSection } from "../sections/NavigationSection";
-import { PartnerSection } from "../sections/PartnerSection";
-import { TeamSection } from "../sections/TeamSection";
-import { TrustSection } from "../sections/TrustSection";
+import { HeroSection } from "../sections/HeroSection.tsx";
+import { Navbar } from "../sections/Navbar";
 
 export const LandingPage = () => {
   return (
-    <div className="bg-white w-full min-h-screen px-[80px] ">
-      <Navbar />
+    <div className=" w-full min-h-screen  ">
+      <div className="relative w-full">
+        <div className="w-screen h-screen  relative">
+          <img
+            src="/images/hero-bg.png"
+            alt="Pink Curve Background"
+            className="w-screen h-[90vh]  absolute top-[-23px] "
+          />
+        </div>
+        {/* Content on top */}
+        <div className="absolute inset-0 z-10   px-5 pt-12 lg:px-0 lg:pt-0 lg:ps-44 lg:pe-24 gap-15">
+          <Navbar />
+          <HeroSection />
+        </div>
+      </div>
 
       {/* <div className="relative w-full">
         <div className="absolute top-[1102px] left-0 w-[180px] h-[180px] bg-[#7b5ee0] rounded-[90px] blur-[110px]" />
@@ -112,7 +117,7 @@ export const LandingPage = () => {
         />
       </div> */}
 
-      <FooterSection />
+      <HeroSection />
 
       {/* <NavigationSection />
 

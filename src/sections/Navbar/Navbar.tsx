@@ -27,7 +27,7 @@ export const Navbar = () => {
         </nav>
 
         <Button className="bg-[#7b5ee0] hover:bg-[#6a4ec9] rounded-[40px] px-4 py-3 h-auto">
-          <span className="font-semibold text-white text-base tracking-[0] leading-4 whitespace-nowrap">
+          <span className="[font-family:'Plus_Jakarta_Sans',Helvetica] font-semibold text-white text-base tracking-[0] leading-4 whitespace-nowrap">
             Start Your AI HR Audit
           </span>
         </Button>
