@@ -1,0 +1,96 @@
+import React from "react";
+import { Avatar, AvatarImage } from "../../components/ui/avatar";
+import { Badge } from "../../components/ui/badge";
+import { Card, CardContent } from "../../components/ui/card";
+import { Separator } from "../../components/ui/separator";
+
+const testimonials = [
+  {
+    quote:
+      "HCM Strategy helped us move from theory to practice - our HR team now runs AI-assisted recruiting and performance reviews with confidence.",
+    name: "Michael Rodriguez",
+    title: "Chief Human Resources Officer",
+    avatar: "/ellipse-1-1.png",
+  },
+  {
+    quote:
+      "Implementing HCM Strategy has revolutionized our talent acquisition process, allowing for more efficient and data-driven decisions that align with our company goals.",
+    name: "Jessica Lee",
+    title: "Talent Acquisition Manager",
+    avatar: "/ellipse-1-2.png",
+  },
+  {
+    quote:
+      "Thanks to HCM Strategy, our employee engagement has soared as we now have a structured approach to feedback and development.",
+    name: "David Chen",
+    title: "Director of Employee Engagement",
+    avatar: "/ellipse-1-3.png",
+  },
+];
+
+export const CoreOfferingsSection = () => {
+  return (
+    <section className="flex flex-col w-full items-center gap-16 py-16 px-4">
+      <div className="flex flex-col items-center gap-4 w-full max-w-[1280px]">
+        <Badge
+          variant="outline"
+          className="inline-flex items-center justify-center gap-2.5 px-4 py-2 bg-[#7b5ee01f] rounded-[80px] border border-solid border-[#7b5ee0] h-auto"
+        >
+          <span className="font-medium text-[#7b5ee0] text-base tracking-[0] leading-4 whitespace-nowrap">
+            Testimonials
+          </span>
+        </Badge>
+
+        <h2 className="w-full font-semibold text-[40px] text-center tracking-[0] leading-[52px]">
+          <span className="text-[#1a1a1a]">Trusted by Forward-Thinking </span>
+          <span className="text-[#7b5ee0]">HR Teams</span>
+        </h2>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 w-full max-w-[1280px]">
+        {testimonials.map((testimonial, index) => (
+          <Card
+            key={index}
+            className="flex flex-col items-start gap-10 p-6 bg-white rounded-3xl overflow-hidden border border-solid border-[#d9d9d9]"
+          >
+            <CardContent className="flex flex-col items-start gap-4 p-0 w-full">
+              <img
+                className="w-10 h-10"
+                alt="Format quote"
+                src="/format-quote--streamline-rounded-material.svg"
+              />
+
+              <div className="flex flex-col items-start gap-6 w-full">
+                <p className="font-medium text-[#1a1a1a] text-base tracking-[0] leading-[20.8px]">
+                  "{testimonial.quote}"
+                </p>
+
+                <Separator className="w-full" />
+
+                <div className="flex items-center gap-4 w-full">
+                  <Avatar className="w-14 h-14">
+                    <AvatarImage
+                      src={testimonial.avatar}
+                      alt={testimonial.name}
+                      className="object-cover"
+                    />
+                  </Avatar>
+
+                  <div className="flex flex-col items-start gap-1 flex-1">
+                    <h3 className="font-semibold text-[#1a1a1a] text-xl tracking-[0] leading-5">
+                      {testimonial.name}
+                    </h3>
+
+                    <p className="font-normal text-[#969496] text-base tracking-[0] leading-4">
+                      {testimonial.title}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        ))}
+      </div>
+    </section>
+  );
+};
