@@ -1,11 +1,12 @@
 import React from "react";
 import { Button } from "../components/ui/button";
+import { scrollToElement } from "../utilis/functions";
 
 const navigationItems = [
-  { label: "About", href: "#about" },
-  { label: "Services", href: "#services" },
-  { label: "Resources", href: "#resources" },
-  { label: "Contact", href: "#contact" },
+  { label: "About", id: "about" },
+  { label: "Services", id: "services" },
+  { label: "Resources", id: "resources" },
+  { label: "Contact", id: "contact" },
 ];
 
 export const Navbar = () => {
@@ -16,13 +17,13 @@ export const Navbar = () => {
 
         <nav className="flex items-center gap-12">
           {navigationItems.map((item, index) => (
-            <a
+            <span
               key={index}
-              href={item.href}
+              onClick={(e) => scrollToElement(e, item.id)}
               className="font-medium text-black text-base tracking-[0] leading-4 whitespace-nowrap hover:opacity-70 transition-opacity cursor-pointer"
             >
               {item.label}
-            </a>
+            </span>
           ))}
         </nav>
 

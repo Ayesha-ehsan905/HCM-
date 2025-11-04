@@ -9,21 +9,21 @@ const testimonials = [
       "HCM Strategy helped us move from theory to practice - our HR team now runs AI-assisted recruiting and performance reviews with confidence.",
     name: "Michael Rodriguez",
     title: "Chief Human Resources Officer",
-    avatar: "/ellipse-1-1.png",
+    avatar: "/images/testimonials3.png",
   },
   {
     quote:
       "Implementing HCM Strategy has revolutionized our talent acquisition process, allowing for more efficient and data-driven decisions that align with our company goals.",
     name: "Jessica Lee",
     title: "Talent Acquisition Manager",
-    avatar: "/ellipse-1-2.png",
+    avatar: "/images/testimonials1.png",
   },
   {
     quote:
       "Thanks to HCM Strategy, our employee engagement has soared as we now have a structured approach to feedback and development.",
     name: "David Chen",
     title: "Director of Employee Engagement",
-    avatar: "/ellipse-1-3.png",
+    avatar: "/images/testimonials2.png",
   },
 ];
 

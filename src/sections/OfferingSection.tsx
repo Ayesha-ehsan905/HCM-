@@ -5,7 +5,10 @@ import { Card, CardContent } from "../components/ui/card";
 
 export const OfferingSection = () => {
   return (
-    <section className="relative w-full container py-10 lg:py-16 bg-secondary/4 overflow-hidden my-[200px] ">
+    <section
+      className="relative w-full container py-10 lg:py-16 bg-secondary/4 overflow-hidden my-[200px] "
+      id="services"
+    >
       {/* Background Blurs */}
       <div className="absolute top-[400px] left-[100px] lg:top-[590px] lg:left-[400px] w-[200px] lg:w-[347px] h-[200px] lg:h-[347px] bg-secondary rounded-full blur-[150px]" />
       <div className="absolute -right-10 bottom-0 w-[200px] lg:w-[347px] h-[200px] lg:h-[347px] bg-orange rounded-full blur-[150px]" />

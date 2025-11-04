@@ -3,25 +3,25 @@ import { Card, CardContent } from "../components/ui/card";
 
 const features = [
   {
-    icon: "/chart-relationship--streamline-carbon.svg",
+    icon: "/images/chart-relationship--streamline-carbon.svg",
     title: "Proven Expertise",
     description:
       "20+ years of experience leading HR transformation across industries.",
   },
   {
-    icon: "/ibm-z-os-ai-control-interface--streamline-carbon.svg",
+    icon: "/images/ibm-z-os-ai-control-interface--streamline-carbon.svg",
     title: "Practical AI Integration",
     description:
       "We go beyond theory - embedding AI directly into your workflows and systems.",
   },
   {
-    icon: "/gateway-api--streamline-carbon.svg",
+    icon: "/images/gateway-api--streamline-carbon.svg",
     title: "Ethical Approach",
     description:
       "We prioritize trust, transparency, and responsible AI adoption in every engagement.",
   },
   {
-    icon: "/analytics-reference--streamline-carbon.svg",
+    icon: "/images/analytics-reference--streamline-carbon.svg",
     title: "Scalable Results",
     description:
       "From startups to enterprises, our frameworks adapt and grow with you.",
@@ -30,7 +30,10 @@ const features = [
 
 export const WhyChooseUsSection = () => {
   return (
-    <section className="container flex flex-col w-full items-center gap-16 my-[240px]">
+    <section
+      className="container flex flex-col w-full items-center gap-16 my-[240px]"
+      id="resources"
+    >
       <div className="flex flex-col items-center gap-4 w-full">
         <Badge
           variant="outline"

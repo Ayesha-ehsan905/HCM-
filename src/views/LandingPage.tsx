@@ -4,6 +4,8 @@ import {
   OfferingSection,
   WhyChooseUsSection,
   TestimonialsSection,
+  ConsultationSection,
+  FooterSection,
 } from "../sections";
 import HeroVisual from "../sections/HeroVisual";
 
@@ -22,16 +24,8 @@ export const LandingPage = () => {
       <ComingSoonSection />
       <WhyChooseUsSection />
       <TestimonialsSection />
-
-      {/*  
-
-
-
-      <CoreOfferingsSection />
-
-      <PartnerSection />
-
-      <TeamSection /> */}
+      <ConsultationSection />
+      <FooterSection />
     </div>
   );
 };
