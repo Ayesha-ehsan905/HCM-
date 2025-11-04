@@ -1,1 +1,0 @@
-export { CoreOfferingsSection } from "./CoreOfferingsSection";

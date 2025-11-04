@@ -130,7 +130,7 @@ body {
 }
 
 .container {
-  padding-inline: 30px;
+  padding-inline: 16px;
   max-width: 1900px;
   margin-inline: auto;
 }

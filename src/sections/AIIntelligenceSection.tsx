@@ -3,7 +3,7 @@ import { Badge } from "../components/ui/badge";
 
 export const AIIntelligenceSection = () => {
   return (
-    <section className="container flex flex-col items-center gap-6 w-full  mx-auto px-4 mt-[250px]">
+    <section className="container flex flex-col items-center gap-6 w-full  mx-auto px-4 my-[240px]">
       <div className="flex flex-col items-center gap-4 w-full">
         <Badge
           variant="outline"

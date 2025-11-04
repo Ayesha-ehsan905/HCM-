@@ -1,6 +1,11 @@
-import { AIIntelligenceSection } from "../sections/AIIntelligenceSection";
+import {
+  AIIntelligenceSection,
+  ComingSoonSection,
+  OfferingSection,
+  WhyChooseUsSection,
+  TestimonialsSection,
+} from "../sections";
 import HeroVisual from "../sections/HeroVisual";
-import { OfferingSection } from "../sections/OfferingSection";
 
 export const LandingPage = () => {
   return (
@@ -13,12 +18,14 @@ export const LandingPage = () => {
       </div>
       <AIIntelligenceSection />
       <OfferingSection />
+      <WhyChooseUsSection />
+      <ComingSoonSection />
+      <WhyChooseUsSection />
+      <TestimonialsSection />
 
       {/*  
 
-      <CallToActionSection />
 
-      <TrustSection />
 
       <CoreOfferingsSection />
 
