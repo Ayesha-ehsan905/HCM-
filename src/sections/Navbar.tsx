@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "../../components/ui/button";
+import { Button } from "../components/ui/button";
 
 const navigationItems = [
   { label: "About", href: "#about" },
@@ -10,7 +10,7 @@ const navigationItems = [
 
 export const Navbar = () => {
   return (
-    <header className=" w-full h-16">
+    <header className=" w-full h-16 ">
       <div className="flex items-center justify-between h-full ">
         <img className="w-[87px] h-[43px]" alt="Group" src="/group-11.png" />
 
@@ -19,15 +19,15 @@ export const Navbar = () => {
             <a
               key={index}
               href={item.href}
-              className="font-medium text-[#1a1a1a] text-base tracking-[0] leading-4 whitespace-nowrap hover:opacity-70 transition-opacity cursor-pointer"
+              className="font-medium text-black text-base tracking-[0] leading-4 whitespace-nowrap hover:opacity-70 transition-opacity cursor-pointer"
             >
               {item.label}
             </a>
           ))}
         </nav>
 
-        <Button className="bg-[#7b5ee0] hover:bg-[#6a4ec9] rounded-[40px] px-4 py-3 h-auto">
-          <span className="[font-family:'Plus_Jakarta_Sans',Helvetica] font-semibold text-white text-base tracking-[0] leading-4 whitespace-nowrap">
+        <Button className="bg-secondary hover:bg-secondary/90 rounded-[40px] px-4 py-3 h-auto">
+          <span className="font-semibold text-white text-base tracking-[0] leading-4 whitespace-nowrap">
             Start Your AI HR Audit
           </span>
         </Button>

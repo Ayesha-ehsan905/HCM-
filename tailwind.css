@@ -1,7 +1,6 @@
 @import "tailwindcss";
 
 :root {
-  --font-plus-jakarta-sans: "Plus_Jakarta_Sans", Arial, Helvetica, sans-serif;
   --background: #ffffff;
 }
 
@@ -10,6 +9,7 @@
   --color-primary: #ffffff;
   --color-secondary: #7B5EE0;
   --color-black: #1A1A1A;
+  --color-orange: #ffd8de;
 
 
 }
@@ -17,11 +17,10 @@
 
 
 body {
+  font-family: "Plus Jakarta Sans", sans-serif;
   background: var(--background);
   color: var(--color-primary);
-  font-family: var(--font-plus-jakarta-sans), Arial,
-    Helvetica,
-    sans-serif;
+
   overflow-x: hidden;
 }
 
