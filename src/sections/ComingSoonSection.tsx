@@ -3,8 +3,8 @@ import { Badge } from "../components/ui/badge";
 
 export const ComingSoonSection = () => {
   return (
-    <section className="container">
-      <div className=" relative w-full px-10 py-16 bg-secondary/12 rounded-2xl overflow-hidden my-[240px]">
+    <section className="container my-[60px] lg:my-[240px]">
+      <div className=" relative w-full px-5 pt-8  pb-40 lg:px-10 lg:py-16 bg-secondary/12 rounded-2xl overflow-hidden ">
         <div className="absolute top-[-95px] left-[-76px] w-[194px] h-[194px] bg-orange rounded-[97px] blur-[75px]" />
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
@@ -17,7 +17,7 @@ export const ComingSoonSection = () => {
             </Badge>
 
             <div className="flex flex-col items-start gap-6 w-full">
-              <h2 className="font-semibold text-[40px] leading-[52px]">
+              <h2 className="font-semibold text-[24px] lg:text-[40px] leading-normal lg:leading-[52px]">
                 <span className="text-black">Your </span>
                 <span className="text-secondary">Personal AI</span>
                 <span className="text-black"> HR Partner</span>

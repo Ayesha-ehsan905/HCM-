@@ -29,8 +29,8 @@ const testimonials = [
 
 export const TestimonialsSection = () => {
   return (
-    <section className="container my-[240px]">
-      <div className="flex flex-col w-full items-center gap-16 py-16 px-4">
+    <section className="container my-[60px] lg:my-[240px]">
+      <div className="flex flex-col w-full items-center gap-4 lg:gap-16 py-16 lg:px-4">
         <div className="flex flex-col items-center gap-4 w-full max-w-[1280px]">
           <Badge
             variant="outline"
@@ -41,9 +41,9 @@ export const TestimonialsSection = () => {
             </span>
           </Badge>
 
-          <h2 className="w-full font-semibold text-[40px] text-center tracking-[0] leading-[52px]">
-            <span className="text-[#1a1a1a]">Trusted by Forward-Thinking </span>
-            <span className="text-[#7b5ee0]">HR Teams</span>
+          <h2 className="w-full font-semibold text-[24px] lg:text-[40px]  leading-normal   text-center tracking-[0] lg:leading-[52px]">
+            <span className="text-black">Trusted by Forward-Thinking </span>
+            <span className="text-secondary">HR Teams</span>
           </h2>
         </div>
 

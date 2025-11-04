@@ -22,7 +22,7 @@ export const FooterSection = () => {
   return (
     <div className="container mb-3" id="contact">
       <footer className="flex flex-col w-full items-start gap-6 pt-10 pb-6 px-10 bg-[#7b5ee014] rounded-3xl overflow-hidden">
-        <div className="flex items-start gap-[100px] w-full">
+        <div className="flex flex-col lg:flex-row items-start gap-6 lg:gap-[100px] w-full">
           <div className="flex flex-col w-[225px] items-start gap-6">
             <img
               className="w-[117px] h-[57.68px]"
@@ -46,7 +46,7 @@ export const FooterSection = () => {
               {servicesData.map((service, index) => (
                 <span
                   key={index}
-                  className="font-medium text-[#1a1a1a] text-sm tracking-[0] leading-[14px] hover:underline"
+                  className="font-medium text-[#1a1a1a] text-sm tracking-[0] leading-[150%]  hover:underline"
                 >
                   {service}
                 </span>
