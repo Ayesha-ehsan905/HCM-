@@ -57,7 +57,7 @@ export const TestimonialsSection = () => {
                 <img
                   className="w-10 h-10"
                   alt="Format quote"
-                  src="/format-quote--streamline-rounded-material.svg"
+                  src="/images/testomionial.svg"
                 />
 
                 <div className="flex flex-col items-start gap-6 w-full">
