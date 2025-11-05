@@ -9,7 +9,7 @@ const HeroVisual = () => {
           <img
             src="/images/hero-bg.png"
             alt="Pink Curve Background"
-            className="w-screen h-[95vh] absolute top-[-23px] "
+            className="w-screen h-screen lg:h-[90vh] absolute top-[-23px] "
           />
         </div>
         {/* Content on top */}

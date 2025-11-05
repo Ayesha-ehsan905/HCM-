@@ -6,7 +6,7 @@ import { Card, CardContent } from "../components/ui/card";
 export const OfferingSection = () => {
   return (
     <section
-      className="relative w-full container py-10 lg:py-16 bg-secondary/4 overflow-hidden my-[200px] "
+      className="relative w-full container py-10 lg:py-16 bg-secondary/4 overflow-hidden my-[60px] lg:my-[200px] "
       id="services"
     >
       {/* Background Blurs */}
@@ -22,7 +22,7 @@ export const OfferingSection = () => {
             </span>
           </Badge>
 
-          <h2 className="font-semibold text-3xl sm:text-4xl tracking-tight leading-tight">
+          <h2 className="font-semibold text-[24px] lg:text-[40px] tracking-tight leading-normal lg:leading-[52px]">
             <span className="text-[#1a1a1a]">Our Core </span>
             <span className="text-[#7b5ee0]">Offerings</span>
           </h2>

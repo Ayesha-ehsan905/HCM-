@@ -14,7 +14,7 @@ export const ConsultationSection = () => {
             backgroundRepeat: "no-repeat",
           }}
         >
-          <CardContent className="flex flex-col items-center justify-center gap-10 px-20 py-16 relative">
+          <CardContent className="flex flex-col items-center justify-center gap-10 px-5 py-7 lg:px-20 lg:py-16 relative">
             <div className="flex flex-col items-center gap-10 relative w-full z-10">
               <div className="flex flex-col items-center gap-4 w-full">
                 <p className="font-medium text-white text-base text-center tracking-[0] leading-5">

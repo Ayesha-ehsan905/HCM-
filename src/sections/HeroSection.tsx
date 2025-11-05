@@ -3,9 +3,9 @@ import { Button } from "../components/ui/button";
 
 export const HeroSection = () => {
   return (
-    <section className="flex flex-row items-center  justify-center gap-[121px] w-full  mt-[70px] ml-[90px]">
+    <section className="flex flex-col lg:flex-row items-center  justify-start lg:justify-center gap-2 lg:gap-[121px] w-full  mt-[70px] lg:ml-[90px]">
       <div className="max-w-[522px] flex flex-col items-start gap-6">
-        <h1 className=" self-stretch font-bold text-[56px] tracking-[0] leading-[78.4px]">
+        <h1 className=" self-stretch font-bold  leading-normal text-[38px] lg:text-[56px] tracking-[0] lg:leading-[78.4px]">
           <span className="text-[#1a1a1a]">Smarter HR, Powered by </span>
           <span className="text-[#7b5ee0]">AI.</span>
         </h1>
